@@ -21,7 +21,7 @@ const SignUp = (e) => {
         password: pass,
       })
       .then((res) => {
-        navigate('/signIn')
+        navigate('/')
       
       });
   };
@@ -61,7 +61,7 @@ const SignUp = (e) => {
       </form>
       <br />
       <hr />
-      <p> Already have an account? <Link to='/signIn'>SignIn</Link> </p>
+      <p> Already have an account? <Link to='/'>SignIn</Link> </p>
     </div>
   );
 };
