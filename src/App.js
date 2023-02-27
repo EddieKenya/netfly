@@ -1,15 +1,20 @@
-import logo from './logo.svg';
-import './App.css';
+import HomePage from "./pages/Home";
+import SignUp from "./pages/SignUp";
+import { Routes, Route } from "react-router-dom";
+import SignIn from "./pages/SignIn";
+import LogOut from "./pages/LogOut";
 
-function App() {
-  return (
+const App = () => {
+  return ( 
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <h1> Eddie site from git hub</h1>
-      </header>
+      <Routes>
+        <Route path="/signIn" element={<SignIn />} />
+        <Route path="/signUp" element={<SignUp />} />
+        <Route path="/" element={<HomePage />} />
+        <Route path="/logout" element={<LogOut />} />
+      </Routes>
     </div>
-  );
+   );
 }
-
+ 
 export default App;
