@@ -1,3 +1,10 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+
 .documents {
     margin-left: 10ch;
     margin-right: 10ch;

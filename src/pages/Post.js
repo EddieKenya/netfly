@@ -1,6 +1,7 @@
 const Post = ({posts}) => {
     return ( 
         <>
+            
             {posts.map((post) =>(
                 <div className="docs" key={post.id}>
                     <h1>{post.title}</h1>

@@ -1,5 +1,6 @@
 import { useState } from "react";
 import { useEffect } from "react";
+import Navbar from "../component/Navbar";
 import Post from "./Post";
 
 
@@ -16,6 +17,7 @@ const HomePage = () => {
       },[])
     return ( 
         <div className="documents">
+            <Navbar/>
             {posts && <Post  posts={posts}/>}
         </div>
      );
